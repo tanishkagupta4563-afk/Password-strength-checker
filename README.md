@@ -34,7 +34,7 @@ Instead of failing on a single condition, the tool uses a scoring-based approach
 
 ## Features
 
-- Score-based password strength evaluation  
+- Password strength evaluation based on standard security rules
 - Checks for:
   - Minimum length (12+ characters)
   - Uppercase letters
