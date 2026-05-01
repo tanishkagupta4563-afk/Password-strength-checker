@@ -35,6 +35,7 @@ Instead of failing on a single condition, the tool uses a scoring-based approach
 ## Features
 
 - Password strength evaluation based on standard security rules
+- Detects common passwords and flags them as Very Weak
 - Checks for:
   - Minimum length (12+ characters)
   - Uppercase letters
@@ -42,6 +43,7 @@ Instead of failing on a single condition, the tool uses a scoring-based approach
   - Digits
   - Special characters  
 - Classifies passwords as:
+  - Very Weak (common passwords)
   - Weak  
   - Medium  
   - Strong  
@@ -58,7 +60,7 @@ Check your version:
 
 ```bash
 python --version
-````
+```
 
 ---
 
@@ -84,7 +86,17 @@ python password_checker.py
 ```
 Welcome to the Password Strength Checker
 
-Enter password: Hello123
+Enter password: password123
+
+Result: Very Weak Password
+
+Suggestions:
+• Do not use common passwords
+----------------------------------------
+```
+
+```
+Enter your password: Hello123
 
 Result: Medium Password
 
@@ -98,22 +110,21 @@ Suggestions:
 
 ## Important Note
 
-* This tool does not store or transmit passwords
-* All processing is done locally
-* Avoid using real or sensitive passwords while testing
+* This tool does not store or transmit passwords  
+* All processing is done locally  
+* Avoid using real or sensitive passwords while testing  
 
 ---
 
 ## Future Enhancements
 
-* Password entropy calculation
-* Common password blacklist detection
-* Hidden input using getpass
-* GUI or web-based version
+* Password entropy calculation  
+* Common password blacklist detection  
+* Hidden input using getpass  
+* GUI or web-based version  
 
 ---
 
 ## Author
 
 Tanishka Gupta
-
